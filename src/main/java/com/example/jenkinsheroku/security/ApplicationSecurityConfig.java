@@ -15,8 +15,7 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .authorizeRequests()
 //                .antMatchers("/", "index", "/css/*", "/js/*")
-                .antMatchers("/run")
-                .permitAll()
+//                .permitAll()
                 .anyRequest()
                 .authenticated()
                 .and()
